@@ -1,0 +1,59 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 272 256)
+	(text "Controller" (rect 5 0 52 12)(font "Arial" ))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 136 192)
+		(input)
+		(text "rst_n" (rect 128 141 142 170)(font "Arial" (font_size 8))(vertical))
+		(text "rst_n" (rect 128 141 142 170)(font "Arial" (font_size 8))(vertical))
+		(line (pt 136 192)(pt 136 176))
+	)
+	(port
+		(pt 72 192)
+		(input)
+		(text "clk" (rect 64 133 78 148)(font "Arial" (font_size 8))(vertical))
+		(text "clk" (rect 64 133 78 148)(font "Arial" (font_size 8))(vertical))
+		(line (pt 72 192)(pt 72 160))
+	)
+	(port
+		(pt 208 128)
+		(input)
+		(text "load" (rect 141 120 164 134)(font "Arial" (font_size 8)))
+		(text "load" (rect 141 120 164 134)(font "Arial" (font_size 8)))
+		(line (pt 208 128)(pt 176 128))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "done" (rect 141 40 169 54)(font "Arial" (font_size 8)))
+		(text "done" (rect 141 40 169 54)(font "Arial" (font_size 8)))
+		(line (pt 208 48)(pt 176 48))
+	)
+	(drawing
+		(text "FSM" (rect 56 64 174 119)(font "Arial" (font_size 36)))
+		(rectangle (rect 32 16 176 160))
+		(circle (rect 128 160 144 176))
+	)
+)

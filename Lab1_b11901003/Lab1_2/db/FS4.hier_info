@@ -1,0 +1,244 @@
+|FS4
+D[0] <= FS:inst.D
+D[1] <= FS:inst1.D
+D[2] <= FS:inst2.D
+D[3] <= FS:inst3.D
+D[4] <= FS:inst3.BOo
+A[0] => FS:inst.A
+A[1] => FS:inst1.A
+A[2] => FS:inst2.A
+A[3] => FS:inst3.A
+B[0] => FS:inst.B
+B[1] => FS:inst1.B
+B[2] => FS:inst2.B
+B[3] => FS:inst3.B
+
+
+|FS4|FS:inst
+D <= xor_3:inst3.o1
+A => xor_3:inst3.i1
+A => not_1:inst11.i1
+A => not_1:inst13.i1
+B => xor_3:inst3.i2
+B => and_2:inst.i2
+B => and_2:inst10.i1
+BOi => xor_3:inst3.i3
+BOi => and_2:inst5.i2
+BOi => and_2:inst10.i2
+BOo <= or_3:inst12.o1
+
+
+|FS4|FS:inst|xor_3:inst3
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|FS4|FS:inst|or_3:inst12
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|FS4|FS:inst|and_2:inst
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst|not_1:inst11
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|FS4|FS:inst|and_2:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst|not_1:inst13
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|FS4|FS:inst|and_2:inst10
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|gnd_1:inst4
+o1 <= <GND>
+
+
+|FS4|FS:inst1
+D <= xor_3:inst3.o1
+A => xor_3:inst3.i1
+A => not_1:inst11.i1
+A => not_1:inst13.i1
+B => xor_3:inst3.i2
+B => and_2:inst.i2
+B => and_2:inst10.i1
+BOi => xor_3:inst3.i3
+BOi => and_2:inst5.i2
+BOi => and_2:inst10.i2
+BOo <= or_3:inst12.o1
+
+
+|FS4|FS:inst1|xor_3:inst3
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|FS4|FS:inst1|or_3:inst12
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|FS4|FS:inst1|and_2:inst
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst1|not_1:inst11
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|FS4|FS:inst1|and_2:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst1|not_1:inst13
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|FS4|FS:inst1|and_2:inst10
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst2
+D <= xor_3:inst3.o1
+A => xor_3:inst3.i1
+A => not_1:inst11.i1
+A => not_1:inst13.i1
+B => xor_3:inst3.i2
+B => and_2:inst.i2
+B => and_2:inst10.i1
+BOi => xor_3:inst3.i3
+BOi => and_2:inst5.i2
+BOi => and_2:inst10.i2
+BOo <= or_3:inst12.o1
+
+
+|FS4|FS:inst2|xor_3:inst3
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|FS4|FS:inst2|or_3:inst12
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|FS4|FS:inst2|and_2:inst
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst2|not_1:inst11
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|FS4|FS:inst2|and_2:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst2|not_1:inst13
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|FS4|FS:inst2|and_2:inst10
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst3
+D <= xor_3:inst3.o1
+A => xor_3:inst3.i1
+A => not_1:inst11.i1
+A => not_1:inst13.i1
+B => xor_3:inst3.i2
+B => and_2:inst.i2
+B => and_2:inst10.i1
+BOi => xor_3:inst3.i3
+BOi => and_2:inst5.i2
+BOi => and_2:inst10.i2
+BOo <= or_3:inst12.o1
+
+
+|FS4|FS:inst3|xor_3:inst3
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|FS4|FS:inst3|or_3:inst12
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|FS4|FS:inst3|and_2:inst
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst3|not_1:inst11
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|FS4|FS:inst3|and_2:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FS4|FS:inst3|not_1:inst13
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|FS4|FS:inst3|and_2:inst10
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
